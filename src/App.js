@@ -69,9 +69,9 @@ function App() {
           className={`${colorTheme === 'theme-orange' ? 'active' : ''}`}
         />
         <div
-          onClick={() => {handleClick('theme-purple')}}
-          id="theme-purple"
-          className={`${colorTheme === 'theme-purple' ? 'active' : ''}`}
+          onClick={() => {handleClick('theme-red')}}
+          id="theme-red"
+          className={`${colorTheme === 'theme-red' ? 'active' : ''}`}
         />
         <div
           onClick={() => {handleClick('theme-green')}}

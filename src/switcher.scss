@@ -31,8 +31,8 @@
   background-color: orange;
 }
 
-#theme-purple {
-  background-color: purple;
+#theme-red {
+  background-color: red;
 }
 
 #theme-green {
@@ -47,31 +47,104 @@
 // Theming colors
 
 .App.theme-blue {
-  background-color: blue;
-  color: white;
+  background-color: #052450;
+  color: #D7E6FC;
+
+  form button {
+    color: #052450;
+    background: #D7E6FC;
+    &:hover {
+      background: #052450;
+      color: #D7E6FC;
+    }
+  }
+  .select::after {
+    color: #052450;
+    background-color: #D7E6FC;
+  }
 }
 
 .App.theme-orange {
-  background-color: orange;
-  color: black;
+  background-color: #FB7250;
+  color: #292C31;
+  form button {
+    color: #FB7250;
+    background: #292C31;
+    &:hover {
+      background: #FB7250;
+      color: #292C31;
+    }
+  }
+  .select::after {
+    color: #FB7250;
+    background-color: #292C31;
+  }
 }
 
-.App.theme-purple {
-  background-color: purple;
-  color: grey;
+.App.theme-red {
+  background-color: #FDECED;
+  color: #D5182A;
+  form button {
+    color: #FDECED;
+    background: #D5182A;
+    &:hover {
+      background: #FDECED;
+      color: #D5182A;
+    }
+  }
+  .select::after {
+    color: #FDECED;
+    background-color: #D5182A;
+  }
 }
 
 .App.theme-green {
-  background-color: green;
-  color: yellow;
+  background-color: #E8FDF2;
+  color: #074526;
+  form button {
+    color: #E8FDF2;
+    background: #074526;
+    &:hover {
+      background: #E8FDF2;
+      color: #074526;
+    }
+  }
+  .select::after {
+    color: #E8FDF2;
+    background-color: #074526;
+  }
 }
 
 .App.theme-black {
-  background-color: black;
-  color: white;
+  background-color: #292C31;
+  color: #ffffff;
+  form button {
+    color: #292C31;
+    background: #ffffff;
+    &:hover {
+      background: #000000;
+      color: #ffffff;
+    }
+  }
+  .select::after {
+    color: #ffffff;
+    background-color: #000000;
+  }
 }
 
 .App.theme-white {
-  background-color: white;
-  color: black;
+  background-color: #BFC4CA;
+  color: #000000;
+  form button {
+    color: #BFC4CA;
+    background: #000000;
+    &:hover {
+      background: #BFC4CA;
+      color: #000000;
+    }
+  }
+  .select::after {
+    color: #BFC4CA;
+    background-color: #000000;
+  }
 }

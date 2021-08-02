@@ -1,7 +1,5 @@
 body {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
   min-height: 100vh;
 }
 header {
@@ -23,13 +21,13 @@ form button {
   background: white;
 }
 form button {
-  color: #ff6f47;
+  color: #000000;
   background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
-  background: #ff6f47;
+  background: #000000;
   color: white;
 }
 .todo-container {
@@ -110,8 +108,7 @@ select {
   overflow: hidden;
 }
 select {
-  color: #ff6f47;
-  font-family: "Poppins", sans-serif;
+  color: #000000;
   cursor: pointer;
   width: 12rem;
 }
