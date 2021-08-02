@@ -5,6 +5,7 @@ import './switcher.scss'
 // Importing Components
 import Form from './components/Form';
 import TodoList from './components/TodoList';
+import Description from './components/Description';
 
 function App() {
   // States
@@ -94,6 +95,7 @@ function App() {
           setStatus={setStatus}
       />
       <TodoList filteredTodos={filteredTodos} setTodos={setTodos} todos={todos}/>
+      <Description />
     </div>
   );
 }
