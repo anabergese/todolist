@@ -14,7 +14,8 @@
     opacity: 0.5;
       &.active{
         opacity: 1;
-        box-shadow: 1px 1px 12px 12px red;
+        width: 30px;
+        height: 30px;
       }
     }
 }
