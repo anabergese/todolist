@@ -10,8 +10,10 @@ const Description = () => {
         <li>Make sure text box is clearly separated from the rest.</li>
         <li>Use simple graphics. </li>
         <li>Use clear, sans-serif fonts.</li>
-        <li>Use clear, large buttons with both icons and text. </li>
+        <li>Use clear, large buttons with both icons and text.</li>
+        <li>Allow personalization of: Themes for text background and foreground colors.</li>
       </ul>
+      <p><a href="https://icons8.com/icon/61195/lista-de-quehaceres" target="_blank">Lista de quehaceres icon by Icons8</a></p>
     </div>
   );
 };
