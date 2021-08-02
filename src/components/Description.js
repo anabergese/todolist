@@ -10,6 +10,8 @@ const Description = () => {
         <li>Make sure text box is clearly separated from the rest.</li>
         <li>Use simple graphics. </li>
         <li>Use clear, sans-serif fonts.</li>
+        <li>Use clear, sans-serif fonts.</li>
+        <li>Use clear, sans-serif fonts.</li>
       </ul>
     </div>
   );
