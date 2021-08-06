@@ -2,14 +2,18 @@ import React, { useState, useEffect } from 'react';
 import './App.scss';
 import './switcher.scss'
 
+
 // Importing Components
 import Form from './components/Form';
 import TodoList from './components/TodoList';
 import Description from './components/Description';
 
+
 function App() {
   // States
   const [ inputText, setInputText ] = useState("");
+  const [ inputTextArea, setInputTextArea ] = useState("");
+  const [ selectedFile, setSelectedFile ] = useState(null);
   const [ todos, setTodos ] = useState([]);
   const [ status, setStatus ] = useState("all");
   const [ filteredTodos, setFilteredTodos ] = useState([]);
@@ -89,9 +93,13 @@ function App() {
       </header>
       <Form
           inputText={inputText}
+          inputTextArea={inputTextArea}
+          selectedFile={selectedFile}
+          setSelectedFile={setSelectedFile}
           todos={todos}
           setTodos={setTodos}
           setInputText={setInputText}
+          setInputTextArea={setInputTextArea}
           setStatus={setStatus}
       />
       <TodoList filteredTodos={filteredTodos} setTodos={setTodos} todos={todos}/>

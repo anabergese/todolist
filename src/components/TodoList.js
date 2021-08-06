@@ -12,6 +12,8 @@ const TodoList = ( { todos, setTodos, filteredTodos }) => {
                 todos={todos}
                 key={todo.id}
                 text={todo.text}
+                textarea={todo.textarea}
+                file={todo.file}
                 todo={todo}
               />
           ))}
