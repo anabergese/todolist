@@ -55,6 +55,7 @@ const Form = ({ todos, setTodos, setInputText, inputText, setStatus, inputTextAr
           />
           </label>
           <input
+            className="file"
             onChange={inputFileHandler}
             type="file"
             name="file"
