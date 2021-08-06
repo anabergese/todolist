@@ -18,7 +18,7 @@ const Todo = ( { text, textarea, file, todo, todos, setTodos }) => {
   return(
       <div className="todo">
           <li className={`todo-item ${todo.completed ? "completed" : ''}`}>
-            <div>{text}</div><p>{textarea}</p>
+            <div>{text}</div><p>{textarea}</p><div>{file}</div>
           </li>
           <button onClick={completeHandler} className="complete-btn">
             <i className="fas fa-check"></i>

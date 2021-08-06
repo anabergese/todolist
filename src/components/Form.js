@@ -2,7 +2,7 @@ import React from 'react';
 // import { useForm } from 'react-hook-form';
 
 
-const Form = ({ todos, setTodos, setInputText, inputText, setStatus, inputTextArea, setInputTextArea, selectedFile, setSelectedFile }) => {
+const Form = ({ todos, setTodos, setInputText, inputText, setStatus, inputTextArea, setInputTextArea, inputFile, setInputFile }) => {
 
     const inputTextHandler = (e) => {
       setInputText(e.target.value);
@@ -13,17 +13,20 @@ const Form = ({ todos, setTodos, setInputText, inputText, setStatus, inputTextAr
     };
 
     const inputFileHandler = (e) => {
+      setInputFile(e.target.value);
       console.log(e.target.value);
+      // Console.log return this => File{name: "Captura de Pantalla 2021-07-25 a la(s) 0.11.43.png", lastModified: 1627164708807, lastModifiedDate…}
     };
 
 
     const submitTodoHandler = (e) => {
       e.preventDefault();
       setTodos([
-          ...todos, { text: inputText, textarea: inputTextArea, completed: false, id: Math.random() * 1000 }
+          ...todos, { text: inputText, textarea: inputTextArea, file: inputFile, completed: false, id: Math.random() * 1000 }
         ])
       setInputText("");
       setInputTextArea("");
+      setInputFile("");
     }
 
     const statusHandler = (e) => {
@@ -52,11 +55,10 @@ const Form = ({ todos, setTodos, setInputText, inputText, setStatus, inputTextAr
           />
           </label>
           <input
-            value={selectedFile}
+            value={inputFile}
             onChange={inputFileHandler}
             type="file"
           />
-         {/* <textarea value={'Please write an essay about your favorite DOM element.'} onChange={inputTextHandler} />*/}
           <button onClick={submitTodoHandler} className="todo-button" type="submit">
             ADD <i className="fas fa-plus-square"></i>
           </button>
