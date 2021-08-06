@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import { useForm } from 'react-hook-form';
 
 
-const Form = ({ todos, setTodos, setInputText, inputText, setStatus, inputTextArea, setInputTextArea, inputFile, setInputFile }) => {
+const Form = ({ todos, setTodos, setInputText, inputText, setStatus, inputTextArea, setInputTextArea }) => {
+    const [ file, setInputFile ] = useState("");
 
     const inputTextHandler = (e) => {
       setInputText(e.target.value);
@@ -13,20 +14,19 @@ const Form = ({ todos, setTodos, setInputText, inputText, setStatus, inputTextAr
     };
 
     const inputFileHandler = (e) => {
-      setInputFile(e.target.value);
-      console.log(e.target.value);
-      // Console.log return this => File{name: "Captura de Pantalla 2021-07-25 a la(s) 0.11.43.png", lastModified: 1627164708807, lastModifiedDate…}
+      const selectedFile = e.target.files[0];
+      setInputFile(selectedFile);
     };
 
 
     const submitTodoHandler = (e) => {
       e.preventDefault();
       setTodos([
-          ...todos, { text: inputText, textarea: inputTextArea, file: inputFile, completed: false, id: Math.random() * 1000 }
+          ...todos, { text: inputText, textarea: inputTextArea, file: file, completed: false, id: Math.random() * 1000 }
         ])
       setInputText("");
       setInputTextArea("");
-      setInputFile("");
+      setInputFile();
     }
 
     const statusHandler = (e) => {
@@ -55,9 +55,9 @@ const Form = ({ todos, setTodos, setInputText, inputText, setStatus, inputTextAr
           />
           </label>
           <input
-            value={inputFile}
             onChange={inputFileHandler}
             type="file"
+            name="file"
           />
           <button onClick={submitTodoHandler} className="todo-button" type="submit">
             ADD <i className="fas fa-plus-square"></i>

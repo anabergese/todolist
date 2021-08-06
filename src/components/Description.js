@@ -3,7 +3,7 @@ import React from 'react';
 const Description = () => {
   return(
     <div className="description">
-      <h1>Description of this feature for users in the Autism spectrum disorder (ASD)</h1>
+      <h1>This feature is for users on the Autism spectrum disorder (ASD)</h1>
       <ul>
         <li>Use contrast between font and background.</li>
         <li>Make sure text box is clearly separated from the rest.</li>

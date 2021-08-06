@@ -13,7 +13,6 @@ function App() {
   // States
   const [ inputText, setInputText ] = useState("");
   const [ inputTextArea, setInputTextArea ] = useState("");
-  const [ inputFile, setInputFile ] = useState(null);
   const [ todos, setTodos ] = useState([]);
   const [ status, setStatus ] = useState("all");
   const [ filteredTodos, setFilteredTodos ] = useState([]);
@@ -94,8 +93,6 @@ function App() {
       <Form
           inputText={inputText}
           inputTextArea={inputTextArea}
-          inputFile={inputFile}
-          setInputFile={setInputFile}
           todos={todos}
           setTodos={setTodos}
           setInputText={setInputText}

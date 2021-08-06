@@ -18,7 +18,9 @@ const Todo = ( { text, textarea, file, todo, todos, setTodos }) => {
   return(
       <div className="todo">
           <li className={`todo-item ${todo.completed ? "completed" : ''}`}>
-            <div>{text}</div><p>{textarea}</p><div>{file}</div>
+            <div>{text}</div>
+            <p>{textarea}</p>
+            {file && <img className="file-uploaded" src={URL.createObjectURL(file)} alt={file.name} />}
           </li>
           <button onClick={completeHandler} className="complete-btn">
             <i className="fas fa-check"></i>
