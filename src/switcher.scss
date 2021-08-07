@@ -12,7 +12,7 @@
     border: 1px solid #fff;
     display: inline-block;
     opacity: 0.5;
-      &.active{
+      &.active {
         opacity: 1;
         width: 30px;
         height: 30px;
@@ -25,15 +25,15 @@
 }
 
 #theme-blue {
-  background-color: blue;
+  background-color: #18227C;
 }
 
 #theme-orange {
-  background-color: orange;
+  background-color: #FF9800;
 }
 
 #theme-red {
-  background-color: red;
+  background-color: #D32F2F;
 }
 
 #theme-green {
@@ -48,37 +48,37 @@
 // Theming colors
 
 .App.theme-blue {
-  background-color: #052450;
-  color: #D7E6FC;
+  background-color: #18227C;
+  color: #FFFFFF;
 
   form button {
-    color: #052450;
-    background: #D7E6FC;
+    color: #FFFFFF;
+    background: #514AAC;
     &:hover {
-      background: #052450;
-      color: #D7E6FC;
+      background:#00004F;
+      color: #FFFFFF;
     }
   }
   .select::after {
-    color: #052450;
-    background-color: #D7E6FC;
+    color: #FFFFFF;
+    background-color: #514AAC;
   }
 }
 
 .App.theme-orange {
-  background-color: #FB7250;
-  color: #292C31;
+  background-color: #FF9800;
+  color: #000000;
   form button {
-    color: #FB7250;
-    background: #292C31;
+    color: #FFC947;
+    background:#000000;
     &:hover {
-      background: #FB7250;
-      color: #292C31;
+      background:#FFC947;
+      color: #C66900;
     }
   }
   .select::after {
-    color: #FB7250;
-    background-color: #292C31;
+    color: #FFC947;
+    background-color: #000000;
   }
   .complete-btn {
     background: rgb(11, 212, 162);
@@ -89,72 +89,73 @@
 }
 
 .App.theme-red {
-  background-color: #FDECED;
-  color: #D5182A;
+  background-color: #D32F2F;
+  color: #FFFFFF;
   form button {
-    color: #FDECED;
-    background: #D5182A;
+    color: #FFFFFF;
+    background: #9A0007;
     &:hover {
-      background: #FDECED;
-      color: #D5182A;
+      background: #FF6659;
+      color: #FFFFFF;
     }
   }
   .select::after {
-    color: #FDECED;
-    background-color: #D5182A;
+    color: #FFFFFF;
+    background-color: #9A0007;
   }
 }
 
 .App.theme-green {
-  background-color: #E8FDF2;
-  color: #074526;
+  background-color: #D7FFD9;
+  color: #000000;
   form button {
-    color: #E8FDF2;
-    background: #074526;
+    color: #000000;
+    background: #75A478;
     &:hover {
-      background: #E8FDF2;
-      color: #074526;
+      background: #A5D6A7;
+      color: #FFFFFF;
     }
   }
   .select::after {
-    color: #E8FDF2;
-    background-color: #074526;
+    color: #000000;
+    background-color: #75A478;
   }
 }
 
 .App.theme-black {
-  background-color: #292C31;
-  color: #ffffff;
+  background-color: #212121;
+  color: #FFFFFF;
   form button {
-    color: #292C31;
-    background: #ffffff;
+    color: #FFFFFF;
+    background: #484848;
     &:hover {
       background: #000000;
-      color: #ffffff;
+      color: #FFFFFF;
     }
   }
   .select::after {
-    color: #ffffff;
-    background-color: #000000;
+    color: #FFFFFF;
+    background-color: #484848;
   }
   .file{
-    color: #000000;
+    color:#484848;
   }
 }
 
 .App.theme-white {
-  background-color: #BFC4CA;
+  background-color: #CFD8DC;
   color: #000000;
   form button {
-    color: #BFC4CA;
-    background: #000000;
-    &:hover {
-      background: #BFC4CA;
-      color: #000000;
-    }
+    background: #9EA7AA;
+    color: #000000;
+
+  &:hover {
+    color: #9EA7AA;
+    background: #FFFFFF;
   }
+}
   .select::after {
-    color: #BFC4CA;
-    background-color: #000000;
+    color: #000000;
+    background-color: #9EA7AA;
   }
 }
