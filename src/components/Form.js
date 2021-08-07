@@ -38,7 +38,7 @@ const Form = ({ todos, setTodos, setInputText, inputText, setStatus, inputTextAr
       <div>
         <form>
           <label>
-          Title of task:
+          <p>Title of task:</p>
           <input
             value={inputText}
             onChange={inputTextHandler}
@@ -47,7 +47,7 @@ const Form = ({ todos, setTodos, setInputText, inputText, setStatus, inputTextAr
           />
           </label>
           <label>
-          Write your steps here:
+          <p>Write your steps here:</p>
           <input
             value={inputTextArea}
             onChange={inputTextAreaHandler}

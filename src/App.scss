@@ -1,10 +1,10 @@
 body {
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
-}
-header {
-  font-size: 2rem;
-  text-align: center;
+  header {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 
 form {
@@ -13,27 +13,41 @@ form {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  font-size: 24px;
+  font-size: 22px;
   border: 1px solid;
-  margin: auto 100px;
+  border-radius: 10px;
+  margin: auto 400px;
+  label {
+    p {
+      margin-top: 0px;
+      margin-bottom: 12px;
+    }
+  }
+  input {
+    padding: 0.5rem;
+    border: none;
+    background: white;
+    width: 269px;
+    border-radius: 10px;
+  }
+  button {
+    width: 285px;
+    padding: 0.3rem 1.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: #000000;
+    background: #f7fffe;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background: #000000;
+      color: white;
+    }
+  }
 }
-form input,
-form button {
-  padding: 0.5rem;
-  font-size: 2rem;
-  border: none;
-  background: white;
-}
-form button {
-  color: #000000;
-  background: #f7fffe;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-form button:hover {
-  background: #000000;
-  color: white;
-}
+
 .todo-container {
   display: flex;
   justify-content: center;
@@ -51,6 +65,7 @@ form button:hover {
 }
 
 .todo {
+  border-radius: 10px;
   margin: 24px 300px;
   background: white;
   font-size: 1.5rem;
@@ -63,16 +78,25 @@ form button:hover {
     box-shadow: inset -1px 3px 8px 5px #DFE2E4;
     padding: 11px 24px;
     font-weight: bold;
+    border-top-left-radius: 10px;
   }
   p {
     padding-left: 24px;
   }
+  li {
+    flex: 1;
+
+  }
 }
+
 .filter-todo {
   padding: 1rem;
 }
-.todo li {
-  flex: 1;
+
+
+.file-uploaded {
+  width: 132px;
+  padding-left: 24px;
 }
 
 .trash-btn,
@@ -91,11 +115,6 @@ form button:hover {
 .fa-trash,
 .fa-check {
   pointer-events: none;
-}
-
-.fall {
-  transform: translateY(10rem) rotateZ(20deg);
-  opacity: 0;
 }
 
 .completed {
@@ -120,6 +139,7 @@ select {
   margin: 1rem;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 select {
   color: #000000;
@@ -137,12 +157,7 @@ select {
   cursor: pointer;
   pointer-events: none;
 }
-/* Transition */
-/*
-.select:hover::after {
-  transform: scale(1.5);
-}
-*/
+
 
 // Description section
 .description {
@@ -156,9 +171,3 @@ select {
   }
 }
 
-
-
-.file-uploaded {
-  width: 132px;
-  padding-left: 24px;
-}

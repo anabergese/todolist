@@ -11,6 +11,9 @@ const Description = () => {
         <li>Use clear, sans-serif fonts.</li>
         <li>Use clear, large buttons with both icons and text.</li>
         <li>Allow personalization of: Themes for text background and foreground colors.</li>
+        <li>Use clear, large buttons with both icons and text.</li>
+        <li>Following recomendations of Goole Material is an adaptable system of guidelines, components, and tools that support the best practices of user interface design: https://material.io/</li>
+        <li>Following recomendations of Web Content Accessibility Guidelines: https://www.w3.org/TR/WCAG20/</li>
       </ul>
       <p><a href="https://icons8.com/icon/61195/todo-list" target="_blank" rel="noreferrer">Todo List icon by Icons8</a></p>
     </div>
