@@ -3,7 +3,7 @@ import './App.scss';
 import './switcher.scss'
 
 
-// Importing Components
+// Importing the Components
 import Form from './components/Form';
 import TodoList from './components/TodoList';
 import Description from './components/Description';
