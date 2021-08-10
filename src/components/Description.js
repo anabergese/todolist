@@ -6,7 +6,7 @@ const Description = () => {
       <h1>This feature is for users on the Autism spectrum disorder (ASD)</h1>
       <ul>
         <li><strong>To bouild this feature I follow interational recomendations:</strong></li>
-        <li>Goole Material guidelines, components, and tools that support the best practices of user interface design: https://material.io/</li>
+        <li>Google Material guidelines, components, and tools that support the best practices of user interface design: https://material.io/</li>
         <li>Web Content Accessibility Guidelines: https://www.w3.org/TR/WCAG20/</li>
       </ul>
       <ul>
