@@ -3,7 +3,7 @@ import React from 'react';
 const Description = () => {
   return(
     <div className="description">
-      <h1>This feature is for users on the Autism spectrum disorder (ASD)</h1>
+      <h2>This feature is for users on the Autism spectrum disorder (ASD)</h2>
       <ul>
         <li><strong>To bouild this feature I follow interational recomendations:</strong></li>
         <li>Google Material guidelines, components, and tools that support the best practices of user interface design: https://material.io/</li>
