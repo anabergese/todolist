@@ -186,6 +186,19 @@ select {
       margin-left: 0px;
       border: none;
     }
+    .todo-container {
+      .todo-list {
+        .todo {
+          margin-left: 0px;
+          margin-right: 0px;
+          .todo-item {
+            img {
+              width: 124px;
+            }
+          }
+        }
+      }
+    }
     .description {
       ul {
         padding: 0;
