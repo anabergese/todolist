@@ -21,7 +21,7 @@ function App() {
   // USE EFFECT
   useEffect( () => {
     filterHandler();
-  }, [ todos, status ]);
+  }); // [ todos, status ]
 
   useEffect(() => {
     // Check for selected theme
