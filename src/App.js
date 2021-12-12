@@ -7,7 +7,7 @@ import './switcher.scss'
 import Form from './components/Form';
 import TodoList from './components/TodoList';
 import Description from './components/Description';
-
+import ColorTheme from './components/ColorTheme';
 
 function App() {
   // States
@@ -17,6 +17,7 @@ function App() {
   const [ status, setStatus ] = useState("all");
   const [ filteredTodos, setFilteredTodos ] = useState([]);
   const [ colorTheme, setColorTheme ] = useState("theme-white");
+
 
   // USE EFFECT
   useEffect( () => {
@@ -47,46 +48,13 @@ function App() {
     }
   };
 
-  const handleClick = (theme) => {
-    setColorTheme(theme);
-    localStorage.setItem('theme-color', theme);
-  }
 
   return (
     <div className={`App ${colorTheme}`}>
-      <div className="theme-options">
-        <div
-          onClick={() => {handleClick('theme-white')}}
-          id="theme-white"
-          className={`${colorTheme === 'theme-white' ? 'active' : ''}`}
-        />
-        <div
-          onClick={() => {handleClick('theme-blue')}}
-          id="theme-blue"
-          className={`${colorTheme === 'theme-blue' ? 'active' : ''}`}
-
-        />
-        <div
-          onClick={() => {handleClick('theme-orange')}}
-          id="theme-orange"
-          className={`${colorTheme === 'theme-orange' ? 'active' : ''}`}
-        />
-        <div
-          onClick={() => {handleClick('theme-red')}}
-          id="theme-red"
-          className={`${colorTheme === 'theme-red' ? 'active' : ''}`}
-        />
-        <div
-          onClick={() => {handleClick('theme-green')}}
-          id="theme-green"
-          className={`${colorTheme === 'theme-green' ? 'active' : ''}`}
-        />
-        <div
-          onClick={() => {handleClick('theme-black')}}
-          id="theme-black"
-          className={`${colorTheme === 'theme-black' ? 'active' : ''}`}
-        />
-      </div>
+      <ColorTheme
+        setColorTheme={setColorTheme}
+        colorTheme={colorTheme}
+      />
       <header>
         <h1>What's the plan for today? </h1>
       </header>
@@ -99,7 +67,11 @@ function App() {
           setInputTextArea={setInputTextArea}
           setStatus={setStatus}
       />
-      <TodoList filteredTodos={filteredTodos} setTodos={setTodos} todos={todos}/>
+      <TodoList
+        filteredTodos={filteredTodos}
+        setTodos={setTodos}
+        todos={todos}
+      />
       <Description />
     </div>
   );
