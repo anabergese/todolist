@@ -42,6 +42,7 @@ const ColorTheme = ( { setColorTheme, colorTheme }) => {
           className={`${colorTheme === 'theme-black' ? 'active' : ''}`}
         />
       </div>
+
   );
 };
 
