@@ -36,6 +36,9 @@ const Form = ({ todos, setTodos, setInputText, inputText, setStatus, inputTextAr
 
     return (
       <div>
+        <header>
+          <h1>Create a new task</h1>
+        </header>
         <form>
           <label>
           <p>Title of task:</p>

@@ -84,12 +84,8 @@ function App() {
           </Container>
         </Navbar>
 
-          <div className="content">
             <Switch>
               <Route path="/todos/create">
-                <header>
-                  <h1>Create a new task</h1>
-                </header>
                 <Form
                     inputText={inputText}
                     inputTextArea={inputTextArea}
@@ -108,13 +104,13 @@ function App() {
               </Route>
               <Route path="/todos">
               </Route>
-              <Route path="/">
-                <Home />
+              <Route path="/description">
                 <Description />
               </Route>
-
+              <Route path="/">
+                <Home />
+              </Route>
             </Switch>
-          </div>
         </div>
     </Router>
   );
