@@ -12,7 +12,6 @@ import TodoList from "./components/TodoList";
 import Description from "./components/Description";
 import ColorTheme from "./components/ColorTheme";
 import Home from "./components/Home";
-import Navigator from "./components/Navigator";
 
 function App() {
   // States
@@ -56,8 +55,6 @@ function App() {
     <Router>
       <div className={`App ${colorTheme}`}>
         <ColorTheme setColorTheme={setColorTheme} colorTheme={colorTheme} />
-        <Navigator />
-
         <Switch>
           <Route path="/todos/create">
             <Form
