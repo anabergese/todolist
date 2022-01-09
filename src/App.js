@@ -12,6 +12,7 @@ import TodoList from "./components/TodoList";
 import Description from "./components/Description";
 import ColorTheme from "./components/ColorTheme";
 import Home from "./components/Home";
+import Title from "./components/Title";
 
 function App() {
   // States
@@ -57,6 +58,7 @@ function App() {
         <ColorTheme setColorTheme={setColorTheme} colorTheme={colorTheme} />
         <Switch>
           <Route path="/todos/create">
+            <Title />
             <Form
               inputText={inputText}
               inputTextArea={inputTextArea}
@@ -73,7 +75,14 @@ function App() {
               todos={todos}
             />
           </Route>
+
           <Route path="/todos"></Route>
+          <Route path="/recycle">
+            <p>
+              When users delete a task or step, here they still can find it, in
+              case they commit a mistake
+            </p>
+          </Route>
           <Route path="/description">
             <Description />
           </Route>
