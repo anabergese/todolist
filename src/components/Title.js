@@ -1,10 +1,18 @@
 import React from "react";
 import Container from "react-bootstrap/container";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Tdone from "./Tdone";
 
 const Title = () => {
   const [titleTask, setTitleTask] = useState("");
+  const [tdone, setTdone] = useState("");
+
+
+  const submitTitleHandler = (e) => {
+     e.preventDefault();
+     setTdone(titleTask);
+  }
+
   return (
     <Container>
       <header>
@@ -20,10 +28,15 @@ const Title = () => {
             id="title"
           />
         </label>
-        <Link to="/todos/create" className="button-go">
+        <button
+          className="button-go"
+          onClick={submitTitleHandler}
+        >
           ADD
-        </Link>
+        </button>
       </form>
+       <Tdone par={tdone} />
+
     </Container>
   );
 };
